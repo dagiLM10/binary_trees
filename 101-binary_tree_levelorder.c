@@ -91,7 +91,7 @@ void pint_push(binary_tree_t *node, levelorder_queue_t *head,
 void pop(levelorder_queue_t **head)
 {
 	levelorder_queue_t *tmp;
-	
+
 	tmp = (*head)->next;
 	free(*head);
 	*head = tmp;
